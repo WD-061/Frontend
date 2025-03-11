@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Multi-module App</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body class="bg-slate-600 text-gray-100">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
+      <header class="mb-10">
+        <h1
+          class="text-center text-5xl font-bold tracking-tight text-white mb-4"
+        >
+          Welcome to my store!
+        </h1>
+      </header>
+      <main>
+        <section
+          id="products-container"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+        ></section>
+      </main>
+      <footer
+        class="mt-16 pt-8 border-t border-slate-700 text-center text-slate-400 text-sm"
+      >
+        <p>2025 My Store. All rights reserved.</p>
+      </footer>
+    </div>
+    <script type="module" src="index.js"></script>
+  </body>
+</html>
