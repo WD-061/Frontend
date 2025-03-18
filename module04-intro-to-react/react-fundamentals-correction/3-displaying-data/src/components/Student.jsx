@@ -14,4 +14,25 @@ const Student = ({ picture, firstName, lastName, age, course, city }) => {
   );
 };
 
+// Alternative version using studentData prop instead of destructuring:
+
+// const Student = ({ studentData }) => {
+//   return (
+//     <div className="card">
+//       <img
+//         src={studentData.picture}
+//         alt={studentData.firstName + " " + studentData.lastName}
+//       />
+//       <div className="card-body">
+//         <h2>
+//           {studentData.firstName} {studentData.lastName}
+//         </h2>
+//         <p>Age: {studentData.age}</p>
+//         <p>Course: {studentData.course}</p>
+//         <p>City: {studentData.city}</p>
+//       </div>
+//     </div>
+//   );
+// };
+
 export default Student;

@@ -13,6 +13,8 @@ const App = () => {
   return (
     <div>
       <Student {...studentData} />
+      {/* Alternative version using studentData prop instead of destructuring: */}
+      {/* <Student studentData={studentData} /> */}
     </div>
   );
 };
