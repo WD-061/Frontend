@@ -10,7 +10,7 @@ import "./App.css";
 /**
  * Main App component that defines the routing structure of the application
  * Uses React Router v7 for client-side routing
- * 
+ *
  * The routing is organized with:
  * - A parent Layout component that wraps all routes
  * - Child routes that render within the Layout's <Outlet> component
@@ -27,12 +27,12 @@ const App = () => {
         <Route path="/" element={<Layout />}>
           {/* Index route (homepage) */}
           <Route index element={<Home />} />
-          
+
           {/* Static routes */}
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
           <Route path="/users" element={<Users />} />
-          
+
           {/* Dynamic route with URL parameter */}
           <Route path="/users/:userId" element={<UserProfile />} />
         </Route>
